@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Log Viewer</title>
+		
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+		</style>
+		
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				
+				overflow: auto;
+				
+				font-family: 'Roboto Mono', monospace;
+			}
+			
+			details {
+				margin: 1em;
+				padding: 1em;
+				
+				background-color: #d6d6d6;
+			}
+			
+			summary {
+				cursor: pointer;
+			}
+			
+			pre {
+				margin: 1em 0;
+				padding: 1em;
+				
+				background-color: white;
+			}
+			
+			.button {
+				display: inline-block;
+				background-color: black;
+				color: white;
+				padding: 1em;
+				margin-bottom: 1em;
+				cursor: pointer;
+			}
+		</style>
+		<script>
+			function render(url) {
+				let w = window.open("");
+				w.document.write("<iframe width='100%' height='100%' src='" + url + "'></iframe>");
+				w.document.head.innerHTML += "<style>* { margin: 0; padding: 0; border: 0; }</style>";
+			}
+		</script>
+	</head>
+	<body>
+		
+		<details>
+			<summary>200 OK - GET - https://api.starkbank.com/v2/transfer/4721106938757120</summary>
+			<pre><xmp>GET /v2/transfer/4721106938757120 HTTP/1.1
+Host: api.starkbank.com
+User-Agent: Go-http-client/1.1
+Accept: application/json
+Access-Id: project/6236628725006336
+Access-Signature: MEYCIQCopT2h23Unhed6RaU625GsZPwM6uNSA/+9pAoYbe6gLwIhAJL8NN7m2TwsDU2TyQZ835XOYZhWdRx1OgKQnR0B7YB/
+Access-Time: 1732383444
+Accept-Encoding: gzip
+
+</xmp></pre>
+			<pre><xmp>HTTP/2.0 200 OK
+Access-Control-Allow-Origin: *
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Content-Type: application/json
+Date: Sat, 23 Nov 2024 17:37:24 GMT
+Server: Google Frontend
+Strict-Transport-Security: max-age=3600
+Vary: Accept-Encoding
+Via: 1.1 google
+X-Cloud-Trace-Context: 0e0dae0d520dc4684f4fb1434d8bbf11
+
+{
+    "transfer": {
+        "accountNumber": "6992-6",
+        "accountType": "savings",
+        "amount": 350000,
+        "bankCode": "60701190",
+        "branchCode": "4255",
+        "created": "2024-11-23T17:33:13.702663+00:00",
+        "description": "Lucimar Aparecida Silva (091.455.296-12)",
+        "displayDescription": "",
+        "externalId": "eee7cd19-6a0c-40f1-acc0-46f0214d52a2",
+        "fee": 50,
+        "id": "4721106938757120",
+        "metadata": {
+            "authentication": "E20018183202411231733B9dL6nYdJgw"
+        },
+        "name": "Lucimar Aparecida Silva",
+        "rules": [],
+        "scheduled": "2024-11-23T17:33:13.609096+00:00",
+        "status": "success",
+        "tags": [
+            "z5k5223q6zrx"
+        ],
+        "taxId": "091.455.296-12",
+        "transactionIds": [
+            "42904343305067213356884176827887"
+        ],
+        "updated": "2024-11-23T17:33:20.268293+00:00"
+    }
+}</xmp></pre>
+		</details>
+		
+	</body>
+</html>
