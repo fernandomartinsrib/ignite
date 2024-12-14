@@ -1,16 +1,7 @@
-# bmi_calculator
+# Ignite 🔥 Personal Motivation Companion
 
-A new Flutter project.
+## 🌟 Overview
 
-## Getting Started
+Ignite is a mobile application designed to provide personalized motivation and inspiration exactly when you need it most.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Whether you're facing a challenging day, seeking professional growth, or working on personal development, Ignite delivers targeted motivational messages to keep you inspired and focused.
